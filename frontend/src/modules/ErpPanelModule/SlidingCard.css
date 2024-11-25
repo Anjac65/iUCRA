@@ -1,0 +1,13 @@
+
+.card-carousel .ant-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .card-carousel .ant-card {
+      max-width: 300px;
+    }
+  }
+  

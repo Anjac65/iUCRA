@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SM Widget Example</title>
+  <script src="test.js" 
+          data-sm-greeting="Welcome" 
+          data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLWl1Y3JhYThlMy0taXVjcmEiLCJhdXRoU2VydmVyIjoiaHR0cHM6Ly9kaC5zb3VsbWFjaGluZXMuY2xvdWQvYXBpL2p3dCIsImF1dGhUb2tlbiI6ImFwaWtleV92MV9hMzJhM2IwMy1lY2ViLTRmMTMtYjg3Ni1lNGExN2ViZWM3MGQifQ==" 
+          data-sm-layout="fullFrame"></script>
+          
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Prevent scrollbars */
+    }
+  </style>
+  <script>
+    // Wait for the DOM to load
+      // Simulate a click on the button
+      
+      const iframe = document.querySelector('iframe');
+  
+  if (iframe) {
+    // Access the iframe's content document
+    const iframeDoc = iframe.contentWindow.document;
+
+    const button = document.querySelector('[data-sm-cy="connectButton"]');
+      if (button) {
+        button.click();
+      }
+    // Select the button inside the iframe by aria-label
+    const button2 = iframeDoc.querySelector('[aria-label="Enable microphone"]');
+    
+    if (button2) {
+      button2.click();  // Simulate a click
+    }
+  }
+
+    
+  </script>
+</head>
+<body>
+</body>
+</html>

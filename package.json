@@ -1,0 +1,28 @@
+{
+  "name": "iUCRA",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r     <a href=\"https://www.idurarapp.com/\">\r   <img src=\"https://avatars.githubusercontent.com/u/50052356?s=200&v=4\" width=\"128px\" />\r     </a>\r     <h1>Open \"Fair-Code\" Source ERP / CRM | Node.js React.js</h1>\r     <p align=\"center\">\r         <p>IDURAR ERP CRM | Simple To Use | 44 Languages </p>\r     </p>",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idurar/idurar-erp-crm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idurar/idurar-erp-crm/issues"
+  },
+  "homepage": "https://github.com/idurar/idurar-erp-crm#readme",
+  "dependencies": {
+    "@google-cloud/firestore": "^7.10.0",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0"
+  }
+}
