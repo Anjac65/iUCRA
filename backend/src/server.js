@@ -34,8 +34,21 @@ for (const filePath of modelsFiles) {
 
 
 
+
 // Start our app!
 const app = require('./app');
+let sensorData = null;
+
+app.post('/api/sensor', (req, res) => {
+    const { distance } = req.body;
+    console.log(`Received distance: ${distance}`);
+    sensorData = distance;
+    res.status(200).send("Data received");
+});
+
+app.get('/api/sensor/latest', (req, res) => {
+    res.json({ distance: sensorData });
+});
 app.set('port', process.env.PORT || 8888);
 const server = app.listen(app.get('port'), () => {
   console.log(`Express running → On PORT : ${server.address().port}`);

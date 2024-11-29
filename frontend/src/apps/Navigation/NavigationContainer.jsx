@@ -82,6 +82,11 @@ function Sidebar({ collapsible, isMobile = false }) {
       label: <Link to={'/news'}>{translate('news')}</Link>,
     },
     {
+      key: 'hologram',
+      icon: <FilterOutlined />,
+      label: <Link to={'/hologram'}>{translate('hologram')}</Link>,
+    },
+    {
       key: 'offer',
       icon: <FileOutlined />,
       label: <Link to={'/offer'}>{translate('offers')}</Link>,

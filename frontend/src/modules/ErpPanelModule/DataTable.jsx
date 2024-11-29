@@ -504,7 +504,7 @@ export default function DataTable({ config, extra = [] }) {
 
   return (
     <>
-      <PageHeader
+      {/* <PageHeader
         title={DATATABLE_TITLE}
         ghost={true}
         onBack={() => window.history.back()}
@@ -523,7 +523,8 @@ export default function DataTable({ config, extra = [] }) {
           !disableAdd && <AddNewItem config={config} key={`${uniqueId()}`}/>,
         ]}
         style={{ padding: '20px 0px', direction: langDirection }}
-      />
+      /> */}
+      /* change by Pi */
       <Carousel autoplay dots={false} swipeToSlide adaptiveHeight>
         {dataSource.map((record) => (
           <div key={record._id}>
@@ -534,10 +535,10 @@ export default function DataTable({ config, extra = [] }) {
                 <img
                   alt="event"
                   src={`${FILE_BASE_URL}${record.photo}`}
-                  style={{ height: '500px', objectFit: 'cover' }}
+                  style={{ height: '350px', objectFit: 'cover' }}
                 />
               ) : (
-                <div style={{ height: '500px', backgroundColor: '#f0f0f0' }} />
+                <div style={{ height: '350px', backgroundColor: '#f0f0f0' }} />
               )}
               actions={[
                 <Dropdown
@@ -551,11 +552,13 @@ export default function DataTable({ config, extra = [] }) {
                 </Dropdown>
               ]}
               style={{
-                width: '500px', // Set the width here
+                width: '700px', // Set the width here
                 height: '700px', // Optional: set height if you want
                 margin: '0 auto', // Centers the card in the Carousel
                 background: '#000000',
                 color: '#fff',
+                fontSize: '30px',
+                fontWeight: 'bold',
               }}
             >
               <p>{record.content}</p>

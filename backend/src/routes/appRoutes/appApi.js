@@ -20,7 +20,18 @@ const routerApp = (entity, controller) => {
   //   catchErrors(controller['update'])
   // );
   
-  
+  let sensorData = null;
+
+  router.post('/test', (req, res) => {
+    const { data } = req.body;
+    console.log(`Received distance: ${data}`);
+    sensorData = data;
+    res.status(200).json({message: "Data received"});
+});
+
+router.get('/test', (req, res) => {
+    res.json({ data: sensorData });
+});
 
   router.route(`/${entity}/read/:id`).get(catchErrors(controller['read']));
   router

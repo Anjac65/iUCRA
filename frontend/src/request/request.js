@@ -177,6 +177,7 @@ const request = {
     }
   },
   get: async ({ entity }) => {
+    console.log(entity);
     try {
       const response = await axios.get(entity);
       return response.data;

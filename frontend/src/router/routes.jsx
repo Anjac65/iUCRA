@@ -30,6 +30,7 @@ const Profile = lazy(() => import('@/pages/Profile'));
 const Lead = lazy(() => import('@/pages/Agents/index'));
 const Offer = lazy(() => import('@/pages/Offer/index'));
 const Hologram = lazy(() => import('@/pages/Hologram/index'));
+const Test = lazy(() => import('@/pages/test'));
 const News = lazy(() => import('@/pages/News/index'));
 const NewsCreate = lazy(() => import('@/pages/News/NewsCreate'));
 const NewsRead = lazy(() => import('@/pages/News/NewsRead'));
@@ -177,6 +178,10 @@ let routes = {
     {
       path: '/hologram',
       element: <Hologram />,
+    },
+    {
+      path: '/test',
+      element: <Test />,
     },
     {
       path: '/news',

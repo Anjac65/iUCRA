@@ -53,7 +53,7 @@ export default function Agents() {
                       console.log(mic);
                       mic.click();
                     }
-                    }, 10000); // Adjust the timeout as needed
+                    }, 20000); // Adjust the timeout as needed
                     
                     
                     

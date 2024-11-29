@@ -59,12 +59,12 @@ export default function ErpCrmApp() {
   
       <Layout hasSider style={{ flexDirection: langDirection === 'rtl' ? 'row-reverse' : 'row' }}>
         {/* {currentApp === 'default' ? <Navigation /> : <ExpensesNav />} */}
-        <Navigation />
+        {/* <Navigation /> */}/* change by Pi */
         
         
         {isMobile ? (
           <Layout style={{ marginLeft: 0 }}>
-            <HeaderContent />
+            {/* <HeaderContent /> */}/* change by Pi */
             <Content
               style={{
                 margin: '40px auto 30px',
@@ -79,7 +79,7 @@ export default function ErpCrmApp() {
           </Layout>
         ) : (
           <Layout>
-            <HeaderContent />
+            {/* <HeaderContent /> */}
             <Content
               style={{
                 margin: '40px auto 30px',
